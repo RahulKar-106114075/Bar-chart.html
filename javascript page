@@ -1,0 +1,88 @@
+var bar = [];
+
+
+function Chart() {
+
+	var Height = prompt("Please enter value");
+
+	if (Height != null) {
+
+	bar.push(Height);
+	
+	
+	var barDiv = document.createElement('div');
+	
+	barDiv.className = 'theBar';
+
+	var barDesign = document.createElement('div');
+
+	barDesign.className = 'theBarDesign';
+	barDesign.setAttribute("style","background: "+"blue"+";height: "+barHeight+"%;");
+
+
+
+
+	barDiv.appendChild(barDesign);
+
+	var a = document.createElement("p");
+	
+	var b = document.createTextNode(Height);
+			
+	a.appendChild(b);
+			
+	barDiv.appendChild(a);
+
+	var c=document.getElementById("graph");
+		
+	c.appendChild(barDiv);
+
+	}
+
+		}
+
+
+
+
+	
+
+
+function sort(){
+	bar.sort(function(a,b){return(a-b)});
+	document.getElementById("graph").innerHTML="";
+	
+	
+	for(var i=0;i<bar.length;i++)
+	{
+	var barDiv = document.createElement('div');
+	
+	barDiv.className = 'theBar';
+
+	var barDesign = document.createElement('div');
+
+	barDesign.className = 'theBarDesign';
+
+	barDesign.setAttribute("style","background: "+"blue"+";height: "+bar[i]+"%;");
+
+
+
+
+	barDiv.appendChild(barDesign);
+
+	var a = document.createElement("p");
+	
+	var b = document.createTextNode(bar[i]);
+			
+	a.appendChild(b);
+			
+	barDiv.appendChild(a);
+
+	var c=document.getElementById("graph");
+		
+	c.appendChild(barDiv);
+
+	}
+	
+	
+}
+
+
