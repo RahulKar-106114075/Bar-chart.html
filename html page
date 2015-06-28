@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+
+
+<head>
+<link rel="stylesheet" type="text/css" href="delta web dev task 2.css"> 
+
+</head>
+	
+<script src="delta web dev task 2.js">
+
+
+</script>
+	
+
+
+
+
+
+
+
+
+
+<body>
+<button onclick="Chart()" class="btn">Value</button>
+<button onclick="sort()" class="btn1">Hacker-Mode</button>
+<div id="graph" class="chart"></div>
+
+</body>
+
+
+</html>
