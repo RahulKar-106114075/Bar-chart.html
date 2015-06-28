@@ -1,0 +1,54 @@
+.chart{
+
+font-size:18px;	
+width: 90%;
+	 
+height: 50%;
+	
+padding: 10px;
+
+margin:50px;
+}
+
+
+.theBar{
+
+	width:80px;
+	height: 100%;
+
+	margin: 2px 5px;
+
+	float: left;
+	
+	position: relative;
+}
+
+
+
+.theBarDesign{
+	
+width: 100%;
+
+position: absolute;	
+bottom: 0px;
+
+background-color:black;
+height:0px;
+}
+
+
+
+
+.btn{
+position:absolute;
+left:10px;
+top:550px;
+background-color:#B00000;
+height:30px;
+}
+.btn1{
+position:absolute;
+left:70px;
+top:550px;
+background-color:#B00000;
+height:30px;
